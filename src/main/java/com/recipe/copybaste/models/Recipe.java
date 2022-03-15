@@ -21,10 +21,10 @@ public class Recipe {
     @Column(length = 10000)
     private String description;
 
-    private List<String> ingredients;
-    //private List<Ingredient> parsedIngredients;
+    //private List<String> ingredients;
+
     //this is set up weird because the json data is nested stupidly
-    private List<Instructions> instructions;
+    //private List<Instructions> instructions;
 
 
     public String getName() {
@@ -75,19 +75,4 @@ public class Recipe {
         this.description = description;
     }
 
-    public List<String> getIngredients() {
-        return ingredients;
-    }
-
-    public List<Instructions> getInstructions() {
-        return instructions;
-    }
-
-    public void setInstructions(List<Instructions> instructions) {
-        this.instructions = instructions;
-    }
-
-    public void setIngredients(List<String> ingredients) {
-        this.ingredients = ingredients;
-    }
 }
